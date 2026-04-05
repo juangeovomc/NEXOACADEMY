@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Bitcoin explicado simple: qué es, cómo comprar en USA y cómo proteger tu dinero. Acompañamiento en español." />
+  <title>NexoAcademy | Bitcoin simple (Guía + Mentoría)</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+        <span class="brand-logo-wrap" aria-hidden="true">
+          <img class="brand-logo" src="img/logo.png" alt="NexoAcademy" onerror="this.style.display='none'; this.closest('.brand-logo-wrap').style.display='none'; this.closest('a').querySelector('.brand-mark').style.display='inline-block';" />
+        </span>
+        <span class="brand-mark" aria-hidden="true" style="display:none"></span>
+        <span class="fw-semibold">NexoAcademy</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#bitcoin" data-i18n="nav.bitcoin">Qué es Bitcoin</a></li>
+          <li class="nav-item"><a class="nav-link" href="#comprar" data-i18n="nav.buy">Cómo comprar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#seguridad" data-i18n="nav.security">Protege tu dinero</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre" data-i18n="nav.about">Sobre mí</a></li>
+
+          <li class="nav-item ms-lg-2">
+            <div class="btn-group lang-toggle" role="group" aria-label="Idioma">
+              <button type="button" class="btn btn-outline-light btn-sm" id="langEs" aria-pressed="true">ES</button>
+              <button type="button" class="btn btn-outline-light btn-sm" id="langEn" aria-pressed="false">EN</button>
+            </div>
+          </li>
+
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary btn-sm px-3" href="sms:+19045376790">
+              <span data-i18n="nav.cta">Enviar SMS</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7" id="contenido">
+          <div class="badge badge-soft mb-3" data-aos="fade-up" data-aos-delay="50">
+            <i class="bi bi-translate me-2"></i>
+            <span data-i18n="hero.badge">En español. Paso a paso. Enfocado en seguridad.</span>
+          </div>
+          <h1 class="display-5 fw-bold lh-sm" data-aos="fade-up" data-aos-delay="120">
+            <span data-i18n="hero.title">Bitcoin sin enredos: entiende, compra y protégete</span>
+          </h1>
+          <p class="lead text-body-secondary mt-3" data-aos="fade-up" data-aos-delay="180">
+            <span data-i18n="hero.lead">
+              Si tienes más de 40, trabajas duro y quieres aprender bien (sin “humo”), esta guía es para ti.
+              Te explico lo esencial con ejemplos y te acompaño para que tomes decisiones con calma.
+            </span>
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4" data-aos="fade-up" data-aos-delay="240">
+            <a class="btn btn-primary btn-lg" href="#bitcoin">
+              <span data-i18n="hero.primaryCta">Empezar por el paso 1</span>
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="#contacto"><span data-i18n="hero.secondaryCta">Hablar con una persona</span></a>
+          </div>
+
+          <div class="hero-proof mt-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="d-flex align-items-center gap-3">
+              <div class="avatar-stack" aria-hidden="true">
+                <span class="avatar"></span>
+                <span class="avatar"></span>
+                <span class="avatar"></span>
+              </div>
+              <div class="small text-body-secondary">
+                <span data-i18n="hero.proof">Para latinos en USA. Explicaciones claras. Acompañamiento 1:1 disponible.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="hero-card" data-aos="zoom-in" data-aos-delay="160">
+            <div class="d-flex align-items-start justify-content-between">
+              <div>
+                <div class="text-uppercase small text-body-secondary" data-i18n="hero.card.kicker">Ruta simple</div>
+                <div class="h4 mb-0" data-i18n="hero.card.title">3 pasos, sin estrés</div>
+              </div>
+              <span class="pill" data-i18n="hero.card.pill">Guía</span>
+            </div>
+
+            <hr class="my-4" />
+
+            <div class="vstack gap-3">
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-currency-bitcoin"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="hero.card.item1.title">1) Qué es Bitcoin</div>
+                  <div class="small text-body-secondary" data-i18n="hero.card.item1.desc">Para qué sirve, por qué existe y qué NO es.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-bag-check"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="hero.card.item2.title">2) Cómo comprar en USA</div>
+                  <div class="small text-body-secondary" data-i18n="hero.card.item2.desc">Apps, pasos y qué revisar antes de dar “comprar”.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-shield-lock"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="hero.card.item3.title">3) Cómo proteger tu dinero</div>
+                  <div class="small text-body-secondary" data-i18n="hero.card.item3.desc">Estafas comunes, contraseñas, 2FA y “cold wallet”.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-grid mt-4">
+              <a class="btn btn-primary" href="#contacto"><span data-i18n="hero.card.cta">Quiero ayuda para hacerlo bien</span></a>
+            </div>
+            <div class="small text-body-secondary mt-2" data-i18n="hero.card.note">Enfocado en claridad, calma y seguridad.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3 mt-5" id="resultados">
+        <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="60">
+          <div class="stat">
+            <div class="stat-value" data-i18n="stats.simple.value">Simple</div>
+            <div class="stat-label" data-i18n="stats.simple.label">Explicado con palabras normales</div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+          <div class="stat">
+            <div class="stat-value" data-i18n="stats.safe.value">Seguro</div>
+            <div class="stat-label" data-i18n="stats.safe.label">Enfoque fuerte en estafas y protección</div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="180">
+          <div class="stat">
+            <div class="stat-value" data-i18n="stats.guided.value">Acompañado</div>
+            <div class="stat-label" data-i18n="stats.guided.label">Si quieres, te guío paso a paso</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="bitcoin" class="section">
+      <div class="container">
+        <div class="row align-items-end g-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="eyebrow" data-i18n="step1.eyebrow">Paso 1</div>
+            <h2 class="section-title" data-i18n="step1.title">¿Qué es Bitcoin? (explicado simple)</h2>
+            <p class="section-subtitle" data-i18n="step1.subtitle">
+              Bitcoin es una forma de dinero digital. No lo controla un banco. Puedes enviarlo como un “email de dinero”.
+              Aquí te explico lo necesario para entenderlo sin tecnicismos.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60">
+            <div class="card card-neo h-100 step-card">
+              <div class="card-body">
+                <div class="step-number">1</div>
+                <h3 class="h5 mb-2" data-i18n="step1.card1.title">Qué es (en 2 minutos)</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step1.card1.desc">Una red pública para enviar valor. Nadie puede “imprimirlo” a gusto.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+            <div class="card card-neo h-100 step-card">
+              <div class="card-body">
+                <div class="step-number">2</div>
+                <h3 class="h5 mb-2" data-i18n="step1.card2.title">Qué NO es</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step1.card2.desc">No es una “empresa” ni una promesa de ganancia rápida.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="180">
+            <div class="card card-neo h-100 step-card">
+              <div class="card-body">
+                <div class="step-number">3</div>
+                <h3 class="h5 mb-2" data-i18n="step1.card3.title">Cuándo tiene sentido</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step1.card3.desc">Como parte de un plan: ahorro, inversión y protección del capital.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comprar" class="section section-alt">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="media-panel">
+              <div class="media-panel-inner">
+                <div class="mini-kpi">
+                  <div class="mini-kpi-label" data-i18n="step2.kpi1.label">Tiempo estimado</div>
+                  <div class="mini-kpi-value" data-i18n="step2.kpi1.value">10–20 min</div>
+                </div>
+                <div class="mini-kpi">
+                  <div class="mini-kpi-label" data-i18n="step2.kpi2.label">Paso clave</div>
+                  <div class="mini-kpi-value" data-i18n="step2.kpi2.value">Verificación (KYC)</div>
+                </div>
+                <div class="mini-kpi">
+                  <div class="mini-kpi-label" data-i18n="step2.kpi3.label">Regla simple</div>
+                  <div class="mini-kpi-value" data-i18n="step2.kpi3.value">Empieza pequeño</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80">
+            <div class="eyebrow" data-i18n="step2.eyebrow">Paso 2</div>
+            <h2 class="section-title" data-i18n="step2.title">¿Cómo compro Bitcoin en USA?</h2>
+            <p class="section-subtitle" data-i18n="step2.subtitle">
+              Te digo exactamente qué revisar antes de comprar. Sin presión. Sin “señales”. Con seguridad primero.
+            </p>
+
+            <div class="vstack gap-3">
+              <div class="feature">
+                <div class="feature-icon"><i class="bi bi-phone"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="step2.f1.title">Elige una app confiable</div>
+                  <div class="text-body-secondary" data-i18n="step2.f1.desc">Reputación, soporte, comisiones claras y verificación.</div>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon"><i class="bi bi-credit-card"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="step2.f2.title">Conecta tu pago</div>
+                  <div class="text-body-secondary" data-i18n="step2.f2.desc">Transferencia bancaria suele ser más barata que tarjeta.</div>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon"><i class="bi bi-check2-circle"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="step2.f3.title">Haz tu primera compra pequeña</div>
+                  <div class="text-body-secondary" data-i18n="step2.f3.desc">Primero aprendes el proceso. Luego aumentas con calma.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <a class="btn btn-primary" href="#contacto"><span data-i18n="step2.cta">Quiero que me guíes paso a paso</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seguridad" class="section">
+      <div class="container">
+        <div class="row align-items-end g-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="eyebrow" data-i18n="step3.eyebrow">Paso 3</div>
+            <h2 class="section-title" data-i18n="step3.title">¿Cómo me cuido de estafas y de perder mi dinero?</h2>
+            <p class="section-subtitle" data-i18n="step3.subtitle">
+              La mayoría pierde dinero por errores básicos: enlaces falsos, “soporte” por DM, o por no tener 2FA.
+              Aquí van reglas simples.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="60">
+            <div class="card card-neo h-100 step-card">
+              <div class="card-body">
+                <div class="step-number">A</div>
+                <h3 class="h6 mb-2" data-i18n="step3.a.title">2FA siempre</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step3.a.desc">Activa autenticación de 2 pasos (mejor app que SMS).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+            <div class="card card-neo h-100 step-card">
+              <div class="card-body">
+                <div class="step-number">B</div>
+                <h3 class="h6 mb-2" data-i18n="step3.b.title">No confíes en DMs</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step3.b.desc">El “soporte” por mensaje privado casi siempre es estafa.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+            <div class="card card-neo h-100 step-card">
+              <div class="card-body">
+                <div class="step-number">C</div>
+                <h3 class="h6 mb-2" data-i18n="step3.c.title">Revisa enlaces</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step3.c.desc">Entra por favoritos/URL escrita. Evita links “urgentes”.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+            <div class="card card-neo h-100 step-card">
+              <div class="card-body">
+                <div class="step-number">D</div>
+                <h3 class="h6 mb-2" data-i18n="step3.d.title">Custodia con calma</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step3.d.desc">Aprende cuándo conviene usar una “cold wallet”.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4" data-aos="fade-up" data-aos-delay="60">
+          <div class="col-12">
+            <div class="trust-strip">
+              <div class="trust-item"><i class="bi bi-shield-check"></i><span data-i18n="trust.security">Enfoque en seguridad</span></div>
+              <div class="trust-item"><i class="bi bi-people"></i><span data-i18n="trust.spanish">Acompañamiento en español</span></div>
+              <div class="trust-item"><i class="bi bi-heart"></i><span data-i18n="trust.nopressure">Sin presión, sin “humo”</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section section-alt">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5" data-aos="fade-up">
+            <div class="profile-card">
+              <div class="profile-photo-wrap">
+                <img class="profile-photo" src="img/julio.jpeg" alt="" loading="lazy" onerror="this.style.display='none'; this.closest('.profile-photo-wrap').style.display='none';" />
+              </div>
+              <div class="mt-3">
+                <div class="eyebrow" data-i18n="about.eyebrow">Sobre mí</div>
+                <h2 class="section-title mb-2" data-i18n="about.title">Hola, soy Julian Geovo</h2>
+                <div class="tag tag-solid d-inline-flex align-items-center gap-2 mb-3">
+                  <i class="bi bi-award"></i>
+                  <span data-i18n="about.exp">+15 años en el ecosistema de activos digitales</span>
+                </div>
+                <p class="section-subtitle mb-0" data-i18n="about.subtitle">Te ayudo a entender Bitcoin con calma, sin presión y con foco en seguridad.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="80">
+            <div class="card card-neo">
+              <div class="card-body p-4 p-md-5">
+                <p class="text-body-secondary" data-i18n="about.body">He acompañado a personas (especialmente latinos en USA 40+) a dar sus primeros pasos: entender lo básico, comprar de forma correcta y evitar estafas. Mi estilo es simple y directo: te explico el “por qué”, te doy un plan y te ayudo a ejecutar.</p>
+
+                <div class="row g-3 mt-1">
+                  <div class="col-md-6">
+                    <div class="feature h-100">
+                      <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+                      <div>
+                        <div class="fw-semibold" data-i18n="about.f1.title">Seguridad primero</div>
+                        <div class="text-body-secondary" data-i18n="about.f1.desc">Buenas prácticas, 2FA, enlaces, estafas y custodia.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature h-100">
+                      <div class="feature-icon"><i class="bi bi-diagram-3"></i></div>
+                      <div>
+                        <div class="fw-semibold" data-i18n="about.f2.title">Plan claro</div>
+                        <div class="text-body-secondary" data-i18n="about.f2.desc">Paso a paso, sin tecnicismos y con decisiones tranquilas.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <a class="btn btn-primary" href="#contacto"><span data-i18n="about.cta">Cuéntame tu caso</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h2 class="section-title" data-i18n="contact.title">Agenda una llamada</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Cuéntame tu nivel y tu objetivo. Te recomiendo el mejor plan y el siguiente paso.</p>
+
+            <div class="vstack gap-3">
+              <div class="contact-item">
+                <i class="bi bi-envelope"></i>
+                <div>
+                  <div class="fw-semibold" data-i18n="contact.email">Email</div>
+                  <div class="text-body-secondary">nexocryptoconsulting@gmail.com</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="bi bi-chat-dots"></i>
+                <div>
+                  <div class="fw-semibold" data-i18n="contact.whatsapp">SMS</div>
+                  <div class="text-body-secondary"><a class="footer-link ms-0" href="sms:+19045376790">+1 904 537 6790</a></div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="bi bi-clock"></i>
+                <div>
+                  <div class="fw-semibold" data-i18n="contact.hours">Horario</div>
+                  <div class="text-body-secondary" data-i18n="contact.hoursValue">Lun–Vie, 9:00–18:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80">
+            <div class="card card-neo">
+              <div class="card-body p-4 p-md-5">
+                <form class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="nombre" data-i18n="form.name.label">Nombre</label>
+                      <input class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" data-i18n-placeholder="form.name.placeholder" required />
+                      <div class="invalid-feedback" data-i18n="form.name.error">Ingresa tu nombre.</div>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="email" data-i18n="form.email.label">Email</label>
+                      <input class="form-control" id="email" name="email" type="email" placeholder="tu@email.com" data-i18n-placeholder="form.email.placeholder" required />
+                      <div class="invalid-feedback" data-i18n="form.email.error">Ingresa un email válido.</div>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="nivel" data-i18n="form.level.label">Nivel</label>
+                      <select class="form-select" id="nivel" name="nivel" required>
+                        <option value="" selected disabled data-i18n="form.level.placeholder">Selecciona una opción</option>
+                        <option data-i18n="form.level.o1">Nuevo / Básico</option>
+                        <option data-i18n="form.level.o2">Intermedio</option>
+                        <option data-i18n="form.level.o3">Ya opero (quiero sistema)</option>
+                      </select>
+                      <div class="invalid-feedback" data-i18n="form.level.error">Selecciona tu nivel.</div>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="mensaje" data-i18n="form.goal.label">Objetivo</label>
+                      <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Ej: aprender a gestionar riesgo, crear plan, revisar estrategia..." data-i18n-placeholder="form.goal.placeholder" required></textarea>
+                      <div class="invalid-feedback" data-i18n="form.goal.error">Cuéntame tu objetivo.</div>
+                    </div>
+                    <div class="col-12 d-grid">
+                      <button class="btn btn-primary btn-lg" type="submit">
+                        <span data-i18n="form.submit">Enviar</span>
+                        <i class="bi bi-send ms-2"></i>
+                      </button>
+                    </div>
+                    <div class="col-12">
+                      <div class="small text-body-secondary" data-i18n="form.disclaimer">
+                        Al enviar aceptas ser contactado para coordinar la llamada. Puedes reemplazar este formulario por un plugin en WordPress.
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center gap-2">
+            <span class="brand-logo-wrap" aria-hidden="true">
+              <img class="brand-logo" src="img/logo.png" alt="NexoAcademy" onerror="this.style.display='none'; this.closest('.brand-logo-wrap').style.display='none'; this.closest('.d-flex').querySelector('.brand-mark').style.display='inline-block';" />
+            </span>
+            <span class="brand-mark" aria-hidden="true" style="display:none"></span>
+            <div>
+              <div class="fw-semibold">NexoAcademy</div>
+              <div class="small text-body-secondary">Educación crypto | Gestión de riesgo | Mentorías</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a class="footer-link" href="#bitcoin" data-i18n="footer.bitcoin">Bitcoin</a>
+          <a class="footer-link" href="#comprar" data-i18n="footer.buy">Comprar</a>
+          <a class="footer-link" href="#seguridad" data-i18n="footer.security">Seguridad</a>
+          <a class="footer-link" href="#sobre" data-i18n="footer.about">Sobre mí</a>
+          <a class="footer-link" href="#contacto" data-i18n="footer.contact">Contacto</a>
+        </div>
+      </div>
+
+      <hr class="my-4" />
+
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
+        <div class="small text-body-secondary">© <span id="year"></span> <span data-i18n="footer.rights">NexoAcademy. Todos los derechos reservados.</span></div>
+        <div class="small text-body-secondary" data-i18n="footer.notice">Aviso: contenido educativo. No es asesoría financiera.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

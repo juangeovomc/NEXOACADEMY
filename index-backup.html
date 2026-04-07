@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Módulos de Bitcoin para latinos en USA: seguridad, compra segura, plan y herramientas. Acompañamiento en español." />
-  <title>NexoAcademy | Módulos de Bitcoin (Seguridad, Compra, Plan, Herramientas)</title>
+  <meta name="description" content="Bitcoin explicado simple: qué es, cómo comprar en USA y cómo proteger tu dinero. Acompañamiento en español." />
+  <title>NexoAcademy | Bitcoin simple (Guía + Mentoría)</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top" aria-label="Navegación principal">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
         <span class="brand-logo-wrap" aria-hidden="true">
           <img class="brand-logo" src="img/logo.png" alt="NexoAcademy" onerror="this.style.display='none'; this.closest('.brand-logo-wrap').style.display='none'; this.closest('a').querySelector('.brand-mark').style.display='inline-block';" />
         </span>
@@ -35,11 +35,10 @@
 
       <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="modulo-1.html" data-i18n="nav.module1">Módulo 1</a></li>
-          <li class="nav-item"><a class="nav-link" href="modulo-2.html" data-i18n="nav.module2">Módulo 2</a></li>
-          <li class="nav-item"><a class="nav-link" href="modulo-3.html" data-i18n="nav.module3">Módulo 3</a></li>
-          <li class="nav-item"><a class="nav-link" href="modulo-4.html" data-i18n="nav.module4">Módulo 4</a></li>
-          <li class="nav-item"><a class="nav-link" href="sobre.html" data-i18n="nav.about">Sobre NexoAcademy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bitcoin" data-i18n="nav.bitcoin">Qué es Bitcoin</a></li>
+          <li class="nav-item"><a class="nav-link" href="#comprar" data-i18n="nav.buy">Cómo comprar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#seguridad" data-i18n="nav.security">Protege tu dinero</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre" data-i18n="nav.about">Sobre mí</a></li>
 
           <li class="nav-item ms-lg-2">
             <div class="btn-group lang-toggle" role="group" aria-label="Idioma">
@@ -68,21 +67,21 @@
             <span data-i18n="hero.badge">En español. Paso a paso. Enfocado en seguridad.</span>
           </div>
           <h1 class="display-5 fw-bold lh-sm" data-aos="fade-up" data-aos-delay="120">
-            <span data-i18n="hero.title">Bitcoin para tu vida: 4 módulos clave</span>
+            <span data-i18n="hero.title">Bitcoin sin enredos: entiende, compra y protégete</span>
           </h1>
           <p class="lead text-body-secondary mt-3" data-aos="fade-up" data-aos-delay="180">
             <span data-i18n="hero.lead">
-              Si tienes más de 40, trabajas duro y quieres aprender bien (sin "humo"), esta guía es para ti.
+              Si tienes más de 40, trabajas duro y quieres aprender bien (sin “humo”), esta guía es para ti.
               Te explico lo esencial con ejemplos y te acompaño para que tomes decisiones con calma.
             </span>
           </p>
 
           <div class="d-flex flex-column flex-sm-row gap-3 mt-4" data-aos="fade-up" data-aos-delay="240">
-            <a class="btn btn-primary btn-lg" href="modulo-1.html">
-              <span data-i18n="hero.primaryCta">Empezar por el módulo 1</span>
+            <a class="btn btn-primary btn-lg" href="#bitcoin">
+              <span data-i18n="hero.primaryCta">Empezar por el paso 1</span>
               <i class="bi bi-arrow-right ms-2"></i>
             </a>
-            <a class="btn btn-outline-light btn-lg" href="#sobre"><span data-i18n="hero.secondaryCta">Conóceme</span></a>
+            <a class="btn btn-outline-light btn-lg" href="#contacto"><span data-i18n="hero.secondaryCta">Hablar con una persona</span></a>
           </div>
 
           <div class="hero-proof mt-4" data-aos="fade-up" data-aos-delay="300">
@@ -103,8 +102,8 @@
           <div class="hero-card" data-aos="zoom-in" data-aos-delay="160">
             <div class="d-flex align-items-start justify-content-between">
               <div>
-                <div class="text-uppercase small text-body-secondary" data-i18n="hero.card.kicker">Ruta modular</div>
-                <div class="h4 mb-0" data-i18n="hero.card.title">4 módulos, sin estrés</div>
+                <div class="text-uppercase small text-body-secondary" data-i18n="hero.card.kicker">Ruta simple</div>
+                <div class="h4 mb-0" data-i18n="hero.card.title">3 pasos, sin estrés</div>
               </div>
               <span class="pill" data-i18n="hero.card.pill">Guía</span>
             </div>
@@ -113,37 +112,30 @@
 
             <div class="vstack gap-3">
               <div class="d-flex gap-3">
-                <div class="icon-circle"><i class="bi bi-shield-check"></i></div>
+                <div class="icon-circle"><i class="bi bi-currency-bitcoin"></i></div>
                 <div>
-                  <div class="fw-semibold" data-i18n="hero.card.item1.title">1) Protección y Seguridad</div>
-                  <div class="small text-body-secondary" data-i18n="hero.card.item1.desc">Cómo no perder dinero, estafas, 2FA y custodia.</div>
+                  <div class="fw-semibold" data-i18n="hero.card.item1.title">1) Qué es Bitcoin</div>
+                  <div class="small text-body-secondary" data-i18n="hero.card.item1.desc">Para qué sirve, por qué existe y qué NO es.</div>
                 </div>
               </div>
               <div class="d-flex gap-3">
                 <div class="icon-circle"><i class="bi bi-bag-check"></i></div>
                 <div>
-                  <div class="fw-semibold" data-i18n="hero.card.item2.title">2) Primera Compra Segura</div>
-                  <div class="small text-body-secondary" data-i18n="hero.card.item2.desc">Apps, pasos, KYC y errores comunes.</div>
+                  <div class="fw-semibold" data-i18n="hero.card.item2.title">2) Cómo comprar en USA</div>
+                  <div class="small text-body-secondary" data-i18n="hero.card.item2.desc">Apps, pasos y qué revisar antes de dar “comprar”.</div>
                 </div>
               </div>
               <div class="d-flex gap-3">
-                <div class="icon-circle"><i class="bi bi-diagram-3"></i></div>
+                <div class="icon-circle"><i class="bi bi-shield-lock"></i></div>
                 <div>
-                  <div class="fw-semibold" data-i18n="hero.card.item3.title">3) Plan y Estrategia</div>
-                  <div class="small text-body-secondary" data-i18n="hero.card.item3.desc">Ahorro, gestión de riesgo, cuándo comprar/vender.</div>
-                </div>
-              </div>
-              <div class="d-flex gap-3">
-                <div class="icon-circle"><i class="bi bi-tools"></i></div>
-                <div>
-                  <div class="fw-semibold" data-i18n="hero.card.item4.title">4) Herramientas Prácticas</div>
-                  <div class="small text-body-secondary" data-i18n="hero.card.item4.desc">Wallets, exchanges y apps recomendadas.</div>
+                  <div class="fw-semibold" data-i18n="hero.card.item3.title">3) Cómo proteger tu dinero</div>
+                  <div class="small text-body-secondary" data-i18n="hero.card.item3.desc">Estafas comunes, contraseñas, 2FA y “cold wallet”.</div>
                 </div>
               </div>
             </div>
 
             <div class="d-grid mt-4">
-              <a class="btn btn-primary" href="modulo-1.html"><span data-i18n="hero.card.cta">Quiero empezar ya</span></a>
+              <a class="btn btn-primary" href="#contacto"><span data-i18n="hero.card.cta">Quiero ayuda para hacerlo bien</span></a>
             </div>
             <div class="small text-body-secondary mt-2" data-i18n="hero.card.note">Enfocado en claridad, calma y seguridad.</div>
           </div>
@@ -174,69 +166,169 @@
   </header>
 
   <main>
-    <section id="modulos" class="section">
+    <section id="bitcoin" class="section">
       <div class="container">
         <div class="row align-items-end g-4">
           <div class="col-lg-8" data-aos="fade-up">
-            <div class="eyebrow" data-i18n="modules.eyebrow">Módulos</div>
-            <h2 class="section-title" data-i18n="modules.title">Elige tu punto de partida</h2>
-            <p class="section-subtitle" data-i18n="modules.subtitle">
-              Cada módulo se enfoca en una necesidad real. Puedes empezar por el que más te preocupa o seguirlos en orden.
+            <div class="eyebrow" data-i18n="step1.eyebrow">Paso 1</div>
+            <h2 class="section-title" data-i18n="step1.title">¿Qué es Bitcoin? (explicado simple)</h2>
+            <p class="section-subtitle" data-i18n="step1.subtitle">
+              Bitcoin es una forma de dinero digital. No lo controla un banco. Puedes enviarlo como un “email de dinero”.
+              Aquí te explico lo necesario para entenderlo sin tecnicismos.
             </p>
           </div>
         </div>
 
         <div class="row g-4 mt-2">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="60">
-            <div class="card card-neo h-100 module-card">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60">
+            <div class="card card-neo h-100 step-card">
               <div class="card-body">
-                <div class="module-number">1</div>
-                <h3 class="h5 mb-2" data-i18n="modules.m1.title">Protección y Seguridad</h3>
-                <p class="text-body-secondary mb-3" data-i18n="modules.m1.desc">Aprende a evitar estafas, configurar 2FA, proteger tus claves y cuándo usar custodia propia.</p>
-                <a class="btn btn-outline-light btn-sm" href="modulo-1.html">
-                  <span data-i18n="modules.m1.cta">Ir al módulo</span>
-                  <i class="bi bi-arrow-right ms-1"></i>
-                </a>
+                <div class="step-number">1</div>
+                <h3 class="h5 mb-2" data-i18n="step1.card1.title">Qué es (en 2 minutos)</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step1.card1.desc">Una red pública para enviar valor. Nadie puede “imprimirlo” a gusto.</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="120">
-            <div class="card card-neo h-100 module-card">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+            <div class="card card-neo h-100 step-card">
               <div class="card-body">
-                <div class="module-number">2</div>
-                <h3 class="h5 mb-2" data-i18n="modules.m2.title">Primera Compra Segura</h3>
-                <p class="text-body-secondary mb-3" data-i18n="modules.m2.desc">Apps confiables, proceso KYC, métodos de pago y errores comunes al comprar por primera vez.</p>
-                <a class="btn btn-outline-light btn-sm" href="modulo-2.html">
-                  <span data-i18n="modules.m2.cta">Ir al módulo</span>
-                  <i class="bi bi-arrow-right ms-1"></i>
-                </a>
+                <div class="step-number">2</div>
+                <h3 class="h5 mb-2" data-i18n="step1.card2.title">Qué NO es</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step1.card2.desc">No es una “empresa” ni una promesa de ganancia rápida.</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="180">
-            <div class="card card-neo h-100 module-card">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="180">
+            <div class="card card-neo h-100 step-card">
               <div class="card-body">
-                <div class="module-number">3</div>
-                <h3 class="h5 mb-2" data-i18n="modules.m3.title">Plan y Estrategia</h3>
-                <p class="text-body-secondary mb-3" data-i18n="modules.m3.desc">Cómo planificar ahorro, gestionar riesgo y tomar decisiones sin pánico ni FOMO.</p>
-                <a class="btn btn-outline-light btn-sm" href="modulo-3.html">
-                  <span data-i18n="modules.m3.cta">Ir al módulo</span>
-                  <i class="bi bi-arrow-right ms-1"></i>
-                </a>
+                <div class="step-number">3</div>
+                <h3 class="h5 mb-2" data-i18n="step1.card3.title">Cuándo tiene sentido</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step1.card3.desc">Como parte de un plan: ahorro, inversión y protección del capital.</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="240">
-            <div class="card card-neo h-100 module-card">
-              <div class="card-body">
-                <div class="module-number">4</div>
-                <h3 class="h5 mb-2" data-i18n="modules.m4.title">Herramientas Prácticas</h3>
-                <p class="text-body-secondary mb-3" data-i18n="modules.m4.desc">Wallets recomendadas, exchanges confiables y apps para seguimiento y seguridad.</p>
-                <a class="btn btn-outline-light btn-sm" href="modulo-4.html">
-                  <span data-i18n="modules.m4.cta">Ir al módulo</span>
-                  <i class="bi bi-arrow-right ms-1"></i>
-                </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="comprar" class="section section-alt">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="media-panel">
+              <div class="media-panel-inner">
+                <div class="mini-kpi">
+                  <div class="mini-kpi-label" data-i18n="step2.kpi1.label">Tiempo estimado</div>
+                  <div class="mini-kpi-value" data-i18n="step2.kpi1.value">10–20 min</div>
+                </div>
+                <div class="mini-kpi">
+                  <div class="mini-kpi-label" data-i18n="step2.kpi2.label">Paso clave</div>
+                  <div class="mini-kpi-value" data-i18n="step2.kpi2.value">Verificación (KYC)</div>
+                </div>
+                <div class="mini-kpi">
+                  <div class="mini-kpi-label" data-i18n="step2.kpi3.label">Regla simple</div>
+                  <div class="mini-kpi-value" data-i18n="step2.kpi3.value">Empieza pequeño</div>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80">
+            <div class="eyebrow" data-i18n="step2.eyebrow">Paso 2</div>
+            <h2 class="section-title" data-i18n="step2.title">¿Cómo compro Bitcoin en USA?</h2>
+            <p class="section-subtitle" data-i18n="step2.subtitle">
+              Te digo exactamente qué revisar antes de comprar. Sin presión. Sin “señales”. Con seguridad primero.
+            </p>
+
+            <div class="vstack gap-3">
+              <div class="feature">
+                <div class="feature-icon"><i class="bi bi-phone"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="step2.f1.title">Elige una app confiable</div>
+                  <div class="text-body-secondary" data-i18n="step2.f1.desc">Reputación, soporte, comisiones claras y verificación.</div>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon"><i class="bi bi-credit-card"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="step2.f2.title">Conecta tu pago</div>
+                  <div class="text-body-secondary" data-i18n="step2.f2.desc">Transferencia bancaria suele ser más barata que tarjeta.</div>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon"><i class="bi bi-check2-circle"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="step2.f3.title">Haz tu primera compra pequeña</div>
+                  <div class="text-body-secondary" data-i18n="step2.f3.desc">Primero aprendes el proceso. Luego aumentas con calma.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <a class="btn btn-primary" href="#contacto"><span data-i18n="step2.cta">Quiero que me guíes paso a paso</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seguridad" class="section">
+      <div class="container">
+        <div class="row align-items-end g-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="eyebrow" data-i18n="step3.eyebrow">Paso 3</div>
+            <h2 class="section-title" data-i18n="step3.title">¿Cómo me cuido de estafas y de perder mi dinero?</h2>
+            <p class="section-subtitle" data-i18n="step3.subtitle">
+              La mayoría pierde dinero por errores básicos: enlaces falsos, “soporte” por DM, o por no tener 2FA.
+              Aquí van reglas simples.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="60">
+            <div class="card card-neo h-100 step-card">
+              <div class="card-body">
+                <div class="step-number">A</div>
+                <h3 class="h6 mb-2" data-i18n="step3.a.title">2FA siempre</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step3.a.desc">Activa autenticación de 2 pasos (mejor app que SMS).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+            <div class="card card-neo h-100 step-card">
+              <div class="card-body">
+                <div class="step-number">B</div>
+                <h3 class="h6 mb-2" data-i18n="step3.b.title">No confíes en DMs</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step3.b.desc">El “soporte” por mensaje privado casi siempre es estafa.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+            <div class="card card-neo h-100 step-card">
+              <div class="card-body">
+                <div class="step-number">C</div>
+                <h3 class="h6 mb-2" data-i18n="step3.c.title">Revisa enlaces</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step3.c.desc">Entra por favoritos/URL escrita. Evita links “urgentes”.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+            <div class="card card-neo h-100 step-card">
+              <div class="card-body">
+                <div class="step-number">D</div>
+                <h3 class="h6 mb-2" data-i18n="step3.d.title">Custodia con calma</h3>
+                <p class="text-body-secondary mb-0" data-i18n="step3.d.desc">Aprende cuándo conviene usar una “cold wallet”.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4" data-aos="fade-up" data-aos-delay="60">
+          <div class="col-12">
+            <div class="trust-strip">
+              <div class="trust-item"><i class="bi bi-shield-check"></i><span data-i18n="trust.security">Enfoque en seguridad</span></div>
+              <div class="trust-item"><i class="bi bi-people"></i><span data-i18n="trust.spanish">Acompañamiento en español</span></div>
+              <div class="trust-item"><i class="bi bi-heart"></i><span data-i18n="trust.nopressure">Sin presión, sin “humo”</span></div>
             </div>
           </div>
         </div>
@@ -266,7 +358,7 @@
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="80">
             <div class="card card-neo">
               <div class="card-body p-4 p-md-5">
-                <p class="text-body-secondary" data-i18n="about.body">He acompañado a personas (especialmente latinos en USA 40+) a dar sus primeros pasos: entender lo básico, comprar de forma correcta y evitar estafas. Mi estilo es simple y directo: te explico el "por qué", te doy un plan y te ayudo a ejecutar.</p>
+                <p class="text-body-secondary" data-i18n="about.body">He acompañado a personas (especialmente latinos en USA 40+) a dar sus primeros pasos: entender lo básico, comprar de forma correcta y evitar estafas. Mi estilo es simple y directo: te explico el “por qué”, te doy un plan y te ayudo a ejecutar.</p>
 
                 <div class="row g-3 mt-1">
                   <div class="col-md-6">
@@ -325,7 +417,7 @@
                 <i class="bi bi-clock"></i>
                 <div>
                   <div class="fw-semibold" data-i18n="contact.hours">Horario</div>
-                  <div class="text-body-secondary" data-i18n="contact.hoursValue">Lun-Vie, 9:00-18:00</div>
+                  <div class="text-body-secondary" data-i18n="contact.hoursValue">Lun–Vie, 9:00–18:00</div>
                 </div>
               </div>
             </div>
@@ -398,10 +490,9 @@
           </div>
         </div>
         <div class="col-md-6 text-md-end">
-          <a class="footer-link" href="modulo-1.html" data-i18n="footer.module1">Seguridad</a>
-          <a class="footer-link" href="modulo-2.html" data-i18n="footer.module2">Compra</a>
-          <a class="footer-link" href="modulo-3.html" data-i18n="footer.module3">Plan</a>
-          <a class="footer-link" href="modulo-4.html" data-i18n="footer.module4">Herramientas</a>
+          <a class="footer-link" href="#bitcoin" data-i18n="footer.bitcoin">Bitcoin</a>
+          <a class="footer-link" href="#comprar" data-i18n="footer.buy">Comprar</a>
+          <a class="footer-link" href="#seguridad" data-i18n="footer.security">Seguridad</a>
           <a class="footer-link" href="#sobre" data-i18n="footer.about">Sobre mí</a>
           <a class="footer-link" href="#contacto" data-i18n="footer.contact">Contacto</a>
         </div>

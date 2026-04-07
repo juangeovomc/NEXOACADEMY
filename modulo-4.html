@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Módulo 4: Herramientas Prácticas para Bitcoin. Wallets recomendadas, exchanges confiables y apps para seguimiento y seguridad." />
+  <title>NexoAcademy | Módulo 4: Herramientas Prácticas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-logo-wrap" aria-hidden="true">
+          <img class="brand-logo" src="img/logo.png" alt="NexoAcademy" onerror="this.style.display='none'; this.closest('.brand-logo-wrap').style.display='none'; this.closest('a').querySelector('.brand-mark').style.display='inline-block';" />
+        </span>
+        <span class="brand-mark" aria-hidden="true" style="display:none"></span>
+        <span class="fw-semibold">NexoAcademy</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="modulo-1.html" data-i18n="nav.module1">Módulo 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="modulo-2.html" data-i18n="nav.module2">Módulo 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="modulo-3.html" data-i18n="nav.module3">Módulo 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="modulo-4.html" data-i18n="nav.module4">Módulo 4</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html" data-i18n="nav.about">Sobre NexoAcademy</a></li>
+
+          <li class="nav-item ms-lg-2">
+            <div class="btn-group lang-toggle" role="group" aria-label="Idioma">
+              <button type="button" class="btn btn-outline-light btn-sm" id="langEs" aria-pressed="true">ES</button>
+              <button type="button" class="btn btn-outline-light btn-sm" id="langEn" aria-pressed="false">EN</button>
+            </div>
+          </li>
+
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary btn-sm px-3" href="sms:+19045376790">
+              <span data-i18n="nav.cta">Enviar SMS</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7" id="contenido">
+          <div class="badge badge-soft mb-3" data-aos="fade-up" data-aos-delay="50">
+            <i class="bi bi-translate me-2"></i>
+            <span data-i18n="hero.badge">En español. Paso a paso. Enfocado en seguridad.</span>
+          </div>
+          <h1 class="display-5 fw-bold lh-sm" data-aos="fade-up" data-aos-delay="120">
+            <span data-i18n="m4.hero.title">Herramientas Prácticas</span>
+          </h1>
+          <p class="lead text-body-secondary mt-3" data-aos="fade-up" data-aos-delay="180">
+            <span data-i18n="m4.hero.lead">
+              No necesitas muchas apps, pero sí las correctas. En este módulo te doy mi lista de wallets, exchanges y herramientas que uso y recomiendo para operar con seguridad y simplicidad.
+            </span>
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4" data-aos="fade-up" data-aos-delay="240">
+            <a class="btn btn-primary btn-lg" href="#contenido">
+              <span data-i18n="m4.hero.primaryCta">Ver herramientas</span>
+              <i class="bi bi-arrow-down ms-2"></i>
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="sms:+19045376790"><span data-i18n="m4.hero.secondaryCta">Pedir ayuda personalizada</span></a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="hero-card" data-aos="zoom-in" data-aos-delay="160">
+            <div class="d-flex align-items-start justify-content-between">
+              <div>
+                <div class="text-uppercase small text-body-secondary" data-i18n="m4.hero.card.kicker">Módulo 4</div>
+                <div class="h4 mb-0" data-i18n="m4.hero.card.title">Lo que funciona</div>
+              </div>
+              <span class="pill" data-i18n="m4.hero.card.pill">Kit</span>
+            </div>
+
+            <hr class="my-4" />
+
+            <div class="vstack gap-3">
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-wallet2"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m4.hero.card.item1.title">Wallets</div>
+                  <div class="small text-body-secondary" data-i18n="m4.hero.card.item1.desc">Cold y hot wallets recomendadas.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-bank"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m4.hero.card.item2.title">Exchanges</div>
+                  <div class="small text-body-secondary" data-i18n="m4.hero.card.item2.desc">Plataformas reguladas y confiables.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-phone"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m4.hero.card.item3.title">Apps de seguimiento</div>
+                  <div class="small text-body-secondary" data-i18n="m4.hero.card.item3.desc">Para ver portafolio sin entrar a exchanges.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-shield-check"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m4.hero.card.item4.title">Seguridad</div>
+                  <div class="small text-body-secondary" data-i18n="m4.hero.card.item4.desc">2FA y herramientas adicionales.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-grid mt-4">
+              <a class="btn btn-primary" href="#contenido"><span data-i18n="m4.hero.card.cta">Explorar kit</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="herramientas" class="section">
+      <div class="container">
+        <div class="row align-items-end g-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="eyebrow" data-i18n="m4.tools.eyebrow">Herramientas</div>
+            <h2 class="section-title" data-i18n="m4.tools.title">Mi kit recomendado</h2>
+            <p class="section-subtitle" data-i18n="m4.tools.subtitle">
+              Estas son las herramientas que uso y recomiendo. Son simples, seguras y funcionan bien en USA.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="60">
+            <div class="card card-neo h-100 tool-card">
+              <div class="card-body">
+                <div class="tool-icon"><i class="bi bi-wallet2"></i></div>
+                <h3 class="h5 mb-2" data-i18n="m4.tools.wallets.title">Wallets</h3>
+                <p class="text-body-secondary mb-3" data-i18n="m4.tools.wallets.desc">Cold wallets para ahorro a largo plazo y hot wallets para uso diario.</p>
+                <div class="vstack gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.wallets.w1">Ledger Nano S/X</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.wallets.w2">Trezor Model One/Plus</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.wallets.w3">Trust Wallet (móvil)</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.wallets.w4">MetaMask (para ETH/tokens)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="120">
+            <div class="card card-neo h-100 tool-card">
+              <div class="card-body">
+                <div class="tool-icon"><i class="bi bi-bank"></i></div>
+                <h3 class="h5 mb-2" data-i18n="m4.tools.exchanges.title">Exchanges</h3>
+                <p class="text-body-secondary mb-3" data-i18n="m4.tools.exchanges.desc">Plataformas reguladas en USA con buen soporte y comisiones claras.</p>
+                <div class="vstack gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.exchanges.e1">Coinbase</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.exchanges.e2">Kraken</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.exchanges.e3">Binance.US</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.exchanges.e4">Gemini</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="180">
+            <div class="card card-neo h-100 tool-card">
+              <div class="card-body">
+                <div class="tool-icon"><i class="bi bi-phone"></i></div>
+                <h3 class="h5 mb-2" data-i18n="m4.tools.tracking.title">Seguimiento de portafolio</h3>
+                <p class="text-body-secondary mb-3" data-i18n="m4.tools.tracking.desc">Apps para ver tu portafolio sin entrar todos los días a los exchanges.</p>
+                <div class="vstack gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.tracking.t1">CoinTracker</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.tracking.t2">Zapper</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.tracking.t3">DeBank</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.tracking.t4">CoinGecko (precios)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="240">
+            <div class="card card-neo h-100 tool-card">
+              <div class="card-body">
+                <div class="tool-icon"><i class="bi bi-shield-check"></i></div>
+                <h3 class="h5 mb-2" data-i18n="m4.tools.security.title">Seguridad extra</h3>
+                <p class="text-body-secondary mb-3" data-i18n="m4.tools.security.desc">Herramientas adicionales para proteger tus cuentas y datos.</p>
+                <div class="vstack gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.security.s1">Google Authenticator</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.security.s2">Authy</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.security.s3">1Password (gestor de contraseñas)</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m4.tools.security.s4">Have I Been Pwned (verificar email)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="config" class="section section-alt">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h2 class="section-title" data-i18n="m4.setup.title">Configuración inicial</h2>
+            <p class="section-subtitle" data-i18n="m4.setup.subtitle">
+              Antes de mover dinero, configura estas herramientas correctamente. Te ahorra dolores de cabeza.
+            </p>
+            <div class="vstack gap-3">
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-1-circle"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m4.setup.step1.title">Activa 2FA en todo</div>
+                  <div class="text-body-secondary" data-i18n="m4.setup.step1.desc">Exchange, email, wallet y apps de seguimiento.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-2-circle"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m4.setup.step2.title">Guarda códigos de recuperación</div>
+                  <div class="text-body-secondary" data-i18n="m4.setup.step2.desc">Imprímelos y guárdalos en lugar seguro.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-3-circle"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m4.setup.step3.title">Configura cold wallet</div>
+                  <div class="text-body-secondary" data-i18n="m4.setup.step3.desc">Escribe frase semilla en papel, nunca en digital.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-4-circle"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m4.setup.step4.title">Prueba con montos pequeños</div>
+                  <div class="text-body-secondary" data-i18n="m4.setup.step4.desc">Envía $10-20 para probar envíos/recepción.</div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <a class="btn btn-primary" href="sms:+19045376790"><span data-i18n="m4.setup.cta">Pedir ayuda para configurar</span></a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80">
+            <div class="card card-neo">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="h5 mb-3" data-i18n="m4.checklist.title">Checklist de herramientas</h3>
+                <div class="vstack gap-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check1">
+                    <label class="form-check-label" for="check1" data-i18n="m4.checklist.c1">2FA activado en exchange principal</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check2">
+                    <label class="form-check-label" for="check2" data-i18n="m4.checklist.c2">Cold wallet configurada</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check3">
+                    <label class="form-check-label" for="check3" data-i18n="m4.checklist.c3">Frase semilla guardada en papel</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check4">
+                    <label class="form-check-label" for="check4" data-i18n="m4.checklist.c4">App de seguimiento conectada</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check5">
+                    <label class="form-check-label" for="check5" data-i18n="m4.checklist.c5">Contraseñas únicas guardadas</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check6">
+                    <label class="form-check-label" for="check6" data-i18n="m4.checklist.c6">Prueba de envío/recepción hecha</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center gap-2">
+            <span class="brand-logo-wrap" aria-hidden="true">
+              <img class="brand-logo" src="img/logo.png" alt="NexoAcademy" onerror="this.style.display='none'; this.closest('.brand-logo-wrap').style.display='none'; this.closest('.d-flex').querySelector('.brand-mark').style.display='inline-block';" />
+            </span>
+            <span class="brand-mark" aria-hidden="true" style="display:none"></span>
+            <div>
+              <div class="fw-semibold">NexoAcademy</div>
+              <div class="small text-body-secondary">Educación crypto | Gestión de riesgo | Mentorías</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a class="footer-link" href="index.html" data-i18n="footer.home">Inicio</a>
+          <a class="footer-link" href="modulo-1.html" data-i18n="footer.module1">Seguridad</a>
+          <a class="footer-link" href="modulo-2.html" data-i18n="footer.module2">Compra</a>
+          <a class="footer-link" href="modulo-3.html" data-i18n="footer.module3">Plan</a>
+          <a class="footer-link" href="modulo-4.html" data-i18n="footer.module4">Herramientas</a>
+          <a class="footer-link" href="sms:+19045376790" data-i18n="footer.contact">SMS</a>
+        </div>
+      </div>
+
+      <hr class="my-4" />
+
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
+        <div class="small text-body-secondary">© <span id="year"></span> <span data-i18n="footer.rights">NexoAcademy. Todos los derechos reservados.</span></div>
+        <div class="small text-body-secondary" data-i18n="footer.notice">Aviso: contenido educativo. No es asesoría financiera.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

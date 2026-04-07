@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Módulo 3: Plan y Estrategia para Bitcoin. Ahorro, gestión de riesgo, cuándo comprar/vender y decisiones sin pánico." />
+  <title>NexoAcademy | Módulo 3: Plan y Estrategia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-logo-wrap" aria-hidden="true">
+          <img class="brand-logo" src="img/logo.png" alt="NexoAcademy" onerror="this.style.display='none'; this.closest('.brand-logo-wrap').style.display='none'; this.closest('a').querySelector('.brand-mark').style.display='inline-block';" />
+        </span>
+        <span class="brand-mark" aria-hidden="true" style="display:none"></span>
+        <span class="fw-semibold">NexoAcademy</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="modulo-1.html" data-i18n="nav.module1">Módulo 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="modulo-2.html" data-i18n="nav.module2">Módulo 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="modulo-3.html" data-i18n="nav.module3">Módulo 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="modulo-4.html" data-i18n="nav.module4">Módulo 4</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html" data-i18n="nav.about">Sobre NexoAcademy</a></li>
+
+          <li class="nav-item ms-lg-2">
+            <div class="btn-group lang-toggle" role="group" aria-label="Idioma">
+              <button type="button" class="btn btn-outline-light btn-sm" id="langEs" aria-pressed="true">ES</button>
+              <button type="button" class="btn btn-outline-light btn-sm" id="langEn" aria-pressed="false">EN</button>
+            </div>
+          </li>
+
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary btn-sm px-3" href="sms:+19045376790">
+              <span data-i18n="nav.cta">Enviar SMS</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7" id="contenido">
+          <div class="badge badge-soft mb-3" data-aos="fade-up" data-aos-delay="50">
+            <i class="bi bi-translate me-2"></i>
+            <span data-i18n="hero.badge">En español. Paso a paso. Enfocado en seguridad.</span>
+          </div>
+          <h1 class="display-5 fw-bold lh-sm" data-aos="fade-up" data-aos-delay="120">
+            <span data-i18n="m3.hero.title">Plan y Estrategia</span>
+          </h1>
+          <p class="lead text-body-secondary mt-3" data-aos="fade-up" data-aos-delay="180">
+            <span data-i18n="m3.hero.lead">
+              Comprar es solo el principio. En este módulo aprendes a planificar ahorro, gestionar riesgo y tomar decisiones sin pánico ni FOMO. Un plan simple te protege del mercado y de tus emociones.
+            </span>
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4" data-aos="fade-up" data-aos-delay="240">
+            <a class="btn btn-primary btn-lg" href="#contenido">
+              <span data-i18n="m3.hero.primaryCta">Crear mi plan</span>
+              <i class="bi bi-arrow-down ms-2"></i>
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="modulo-4.html"><span data-i18n="m3.hero.secondaryCta">Siguiente módulo</span></a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="hero-card" data-aos="zoom-in" data-aos-delay="160">
+            <div class="d-flex align-items-start justify-content-between">
+              <div>
+                <div class="text-uppercase small text-body-secondary" data-i18n="m3.hero.card.kicker">Módulo 3</div>
+                <div class="h4 mb-0" data-i18n="m3.hero.card.title">Estrategia sin estrés</div>
+              </div>
+              <span class="pill" data-i18n="m3.hero.card.pill">Plan</span>
+            </div>
+
+            <hr class="my-4" />
+
+            <div class="vstack gap-3">
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-piggy-bank"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m3.hero.card.item1.title">Ahorro constante</div>
+                  <div class="small text-body-secondary" data-i18n="m3.hero.card.item1.desc">DCA y automatización.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-speedometer2"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m3.hero.card.item2.title">Gestión de riesgo</div>
+                  <div class="small text-body-secondary" data-i18n="m3.hero.card.item2.desc">Cuánto poner y cuándo.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-graph-up"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m3.hero.card.item3.title">Decisiones sin pánico</div>
+                  <div class="small text-body-secondary" data-i18n="m3.hero.card.item3.desc">Reglas para comprar/vender.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-calendar-check"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m3.hero.card.item4.title">Revisión periódica</div>
+                  <div class="small text-body-secondary" data-i18n="m3.hero.card.item4.desc">Cuándo ajustar el plan.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-grid mt-4">
+              <a class="btn btn-primary" href="#contenido"><span data-i18n="m3.hero.card.cta">Ver estrategias</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="estrategias" class="section">
+      <div class="container">
+        <div class="row align-items-end g-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="eyebrow" data-i18n="m3.strategies.eyebrow">Estrategias</div>
+            <h2 class="section-title" data-i18n="m3.strategies.title">Formas de planificar tu inversión</h2>
+            <p class="section-subtitle" data-i18n="m3.strategies.subtitle">
+              No necesitas complicarte. Elige una estrategia simple y mantenla. La consistencia es más importante que la perfección.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="60">
+            <div class="card card-neo h-100 module-card">
+              <div class="card-body">
+                <div class="strategy-number">1</div>
+                <h3 class="h5 mb-2" data-i18n="m3.strategies.s1.title">DCA (Dollar Cost Averaging)</h3>
+                <p class="text-body-secondary mb-3" data-i18n="m3.strategies.s1.desc">Compra una cantidad fija cada mes, sin importar el precio. Ideal para empezar y reducir el impacto de la volatilidad.</p>
+                <div class="vstack gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m3.strategies.s1.p1">$100-$200 al mes</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m3.strategies.s1.p2">Automatiza si puedes</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m3.strategies.s1.p3">No mires el precio diario</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="120">
+            <div class="card card-neo h-100 module-card">
+              <div class="card-body">
+                <div class="strategy-number">2</div>
+                <h3 class="h5 mb-2" data-i18n="m3.strategies.s2.title">Ahorro con objetivos</h3>
+                <p class="text-body-secondary mb-3" data-i18n="m3.strategies.s2.desc">Define metas claras (ej: 1 BTC en 5 años) y calcula cuánto necesitas ahorrar mensualmente.</p>
+                <div class="vstack gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m3.strategies.s2.p1">Meta clara y realista</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m3.strategies.s2.p2">Revisa cada 6 meses</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m3.strategies.s2.p3">Ajusta si cambia tu situación</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="180">
+            <div class="card card-neo h-100 module-card">
+              <div class="card-body">
+                <div class="strategy-number">3</div>
+                <h3 class="h5 mb-2" data-i18n="m3.strategies.s3.title">Reserva de oportunidad</h3>
+                <p class="text-body-secondary mb-3" data-i18n="m3.strategies.s3.desc">Mantén un pequeño efectivo para comprar si el precio cae mucho. Solo para operadores con calma.</p>
+                <div class="vstack gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m3.strategies.s3.p1">5-10% del capital máximo</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m3.strategies.s3.p2">Compra solo si baja >20%</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m3.strategies.s3.p3">No te arrepientas si no baja</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="240">
+            <div class="card card-neo h-100 module-card">
+              <div class="card-body">
+                <div class="strategy-number">4</div>
+                <h3 class="h5 mb-2" data-i18n="m3.strategies.s4.title">Hold a largo plazo</h3>
+                <p class="text-body-secondary mb-3" data-i18n="m3.strategies.s4.desc">Compra y mantén por años. Sin intentar hacer trading. La forma más simple y efectiva para la mayoría.</p>
+                <div class="vstack gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m3.strategies.s4.p1">Horizonte 3-5+ años</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m3.strategies.s4.p2">Ignora noticias cortas</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m3.strategies.s4.p3">Revisa solo trimestralmente</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="riesgo" class="section section-alt">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h2 class="section-title" data-i18n="m3.risk.title">Gestión de riesgo simple</h2>
+            <p class="section-subtitle" data-i18n="m3.risk.subtitle">
+              No pongas más de lo que puedes perder. Sigue estas reglas para dormir tranquilo.
+            </p>
+            <div class="vstack gap-3">
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-percent"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m3.risk.r1.title">Máximo 5-10% de tu capital</div>
+                  <div class="text-body-secondary" data-i18n="m3.risk.r1.desc">De tu patrimonio total, no más de ese porcentaje en crypto.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-shield-exclamation"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m3.risk.r2.title">No uses dinero de emergencia</div>
+                  <div class="text-body-secondary" data-i18n="m3.risk.r2.desc">Solo ahorros que no necesites en 1-2 años.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-bank"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m3.risk.r3.title">Diversifica si tienes mucho</div>
+                  <div class="text-body-secondary" data-i18n="m3.risk.r3.desc">Bitcoin + ETH + un par de proyectos grandes, máximo.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-graph-down-arrow"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m3.risk.r4.title">Acepta la volatilidad</div>
+                  <div class="text-body-secondary" data-i18n="m3.risk.r4.desc">Puede caer 50% en meses. Si no puedes soportarlo, reduce el monto.</div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <a class="btn btn-primary" href="modulo-4.html"><span data-i18n="m3.risk.cta">Siguiente módulo: Herramientas</span></a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80">
+            <div class="card card-neo">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="h5 mb-3" data-i18n="m3.emotions.title">Controla emociones comunes</h3>
+                <div class="vstack gap-3">
+                  <div class="alert-soft">
+                    <div class="d-flex gap-2">
+                      <i class="bi bi-emoji-frown"></i>
+                      <div>
+                        <strong data-i18n="m3.emotions.fear.title">Miedo (FUD)</strong>
+                        <p class="small mb-0" data-i18n="m3.emotions.fear.desc">Cuando todos venden, recuerda tu plan. No entres en pánico.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="alert-soft">
+                    <div class="d-flex gap-2">
+                      <i class="bi bi-emoji-smile"></i>
+                      <div>
+                        <strong data-i18n="m3.emotions.fomo.title">FOMO (Fear Of Missing Out)</strong>
+                        <p class="small mb-0" data-i18n="m3.emotions.fomo.desc">Cuando está subiendo fuerte, no compres por impulso. Sigue tu DCA.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="alert-soft">
+                    <div class="d-flex gap-2">
+                      <i class="bi bi-emoji-neutral"></i>
+                      <div>
+                        <strong data-i18n="m3.emotions.greed.title">Codicia</strong>
+                        <p class="small mb-0" data-i18n="m3.emotions.greed.desc">Cuando ganas mucho, no te pongas ambicioso. Toma ganancias si cumpliste tu meta.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center gap-2">
+            <span class="brand-logo-wrap" aria-hidden="true">
+              <img class="brand-logo" src="img/logo.png" alt="NexoAcademy" onerror="this.style.display='none'; this.closest('.brand-logo-wrap').style.display='none'; this.closest('.d-flex').querySelector('.brand-mark').style.display='inline-block';" />
+            </span>
+            <span class="brand-mark" aria-hidden="true" style="display:none"></span>
+            <div>
+              <div class="fw-semibold">NexoAcademy</div>
+              <div class="small text-body-secondary">Educación crypto | Gestión de riesgo | Mentorías</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a class="footer-link" href="index.html" data-i18n="footer.home">Inicio</a>
+          <a class="footer-link" href="modulo-1.html" data-i18n="footer.module1">Seguridad</a>
+          <a class="footer-link" href="modulo-2.html" data-i18n="footer.module2">Compra</a>
+          <a class="footer-link" href="modulo-3.html" data-i18n="footer.module3">Plan</a>
+          <a class="footer-link" href="modulo-4.html" data-i18n="footer.module4">Herramientas</a>
+          <a class="footer-link" href="sms:+19045376790" data-i18n="footer.contact">SMS</a>
+        </div>
+      </div>
+
+      <hr class="my-4" />
+
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
+        <div class="small text-body-secondary">© <span id="year"></span> <span data-i18n="footer.rights">NexoAcademy. Todos los derechos reservados.</span></div>
+        <div class="small text-body-secondary" data-i18n="footer.notice">Aviso: contenido educativo. No es asesoría financiera.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

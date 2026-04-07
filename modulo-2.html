@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Módulo 2: Primera Compra Segura de Bitcoin. Apps confiables, proceso KYC, métodos de pago y errores comunes." />
+  <title>NexoAcademy | Módulo 2: Primera Compra Segura</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-logo-wrap" aria-hidden="true">
+          <img class="brand-logo" src="img/logo.png" alt="NexoAcademy" onerror="this.style.display='none'; this.closest('.brand-logo-wrap').style.display='none'; this.closest('a').querySelector('.brand-mark').style.display='inline-block';" />
+        </span>
+        <span class="brand-mark" aria-hidden="true" style="display:none"></span>
+        <span class="fw-semibold">NexoAcademy</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="modulo-1.html" data-i18n="nav.module1">Módulo 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="modulo-2.html" data-i18n="nav.module2">Módulo 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="modulo-3.html" data-i18n="nav.module3">Módulo 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="modulo-4.html" data-i18n="nav.module4">Módulo 4</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html" data-i18n="nav.about">Sobre NexoAcademy</a></li>
+
+          <li class="nav-item ms-lg-2">
+            <div class="btn-group lang-toggle" role="group" aria-label="Idioma">
+              <button type="button" class="btn btn-outline-light btn-sm" id="langEs" aria-pressed="true">ES</button>
+              <button type="button" class="btn btn-outline-light btn-sm" id="langEn" aria-pressed="false">EN</button>
+            </div>
+          </li>
+
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary btn-sm px-3" href="sms:+19045376790">
+              <span data-i18n="nav.cta">Enviar SMS</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7" id="contenido">
+          <div class="badge badge-soft mb-3" data-aos="fade-up" data-aos-delay="50">
+            <i class="bi bi-translate me-2"></i>
+            <span data-i18n="hero.badge">En español. Paso a paso. Enfocado en seguridad.</span>
+          </div>
+          <h1 class="display-5 fw-bold lh-sm" data-aos="fade-up" data-aos-delay="120">
+            <span data-i18n="m2.hero.title">Primera Compra Segura</span>
+          </h1>
+          <p class="lead text-body-secondary mt-3" data-aos="fade-up" data-aos-delay="180">
+            <span data-i18n="m2.hero.lead">
+              Comprar Bitcoin por primera vez puede ser confuso. En este módulo te guío paso a paso: elegir una app confiable, pasar KYC, conectar tu pago y hacer tu primera compra sin errores.
+            </span>
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4" data-aos="fade-up" data-aos-delay="240">
+            <a class="btn btn-primary btn-lg" href="#contenido">
+              <span data-i18n="m2.hero.primaryCta">Comprar ahora</span>
+              <i class="bi bi-arrow-down ms-2"></i>
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="modulo-3.html"><span data-i18n="m2.hero.secondaryCta">Siguiente módulo</span></a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="hero-card" data-aos="zoom-in" data-aos-delay="160">
+            <div class="d-flex align-items-start justify-content-between">
+              <div>
+                <div class="text-uppercase small text-body-secondary" data-i18n="m2.hero.card.kicker">Módulo 2</div>
+                <div class="h4 mb-0" data-i18n="m2.hero.card.title">Compra sin miedo</div>
+              </div>
+              <span class="pill" data-i18n="m2.hero.card.pill">Práctico</span>
+            </div>
+
+            <hr class="my-4" />
+
+            <div class="vstack gap-3">
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-phone"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m2.hero.card.item1.title">Elige una app</div>
+                  <div class="small text-body-secondary" data-i18n="m2.hero.card.item1.desc">Reputación, comisiones y soporte.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-person-badge"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m2.hero.card.item2.title">Verificación (KYC)</div>
+                  <div class="small text-body-secondary" data-i18n="m2.hero.card.item2.desc">Documentos y aprobación.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-credit-card"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m2.hero.card.item3.title">Conecta tu pago</div>
+                  <div class="small text-body-secondary" data-i18n="m2.hero.card.item3.desc">Banco vs tarjeta y tiempos.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-bag-check"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m2.hero.card.item4.title">Primera compra</div>
+                  <div class="small text-body-secondary" data-i18n="m2.hero.card.item4.desc">Monto pequeño y confirmación.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-grid mt-4">
+              <a class="btn btn-primary" href="#contenido"><span data-i18n="m2.hero.card.cta">Ver pasos</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="pasos" class="section">
+      <div class="container">
+        <div class="row align-items-end g-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="eyebrow" data-i18n="m2.steps.eyebrow">Pasos</div>
+            <h2 class="section-title" data-i18n="m2.steps.title">Cómo comprar tu primer Bitcoin</h2>
+            <p class="section-subtitle" data-i18n="m2.steps.subtitle">
+              Sigue estos pasos en orden. No te saltes el KYC ni la revisión de comisiones.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="60">
+            <div class="card card-neo h-100 module-card">
+              <div class="card-body">
+                <div class="step-number">1</div>
+                <h3 class="h5 mb-2" data-i18n="m2.steps.s1.title">Elige una app confiable</h3>
+                <p class="text-body-secondary mb-3" data-i18n="m2.steps.s1.desc">No todas las apps son iguales. Revisa reputación, comisiones claras y soporte en español.</p>
+                <div class="vstack gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m2.steps.s1.p1">Coinbase, Binance, Kraken</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m2.steps.s1.p2">Evita apps desconocidas</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m2.steps.s1.p3">Lee opiniones reales</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="120">
+            <div class="card card-neo h-100 module-card">
+              <div class="card-body">
+                <div class="step-number">2</div>
+                <h3 class="h5 mb-2" data-i18n="m2.steps.s2.title">Verificación (KYC)</h3>
+                <p class="text-body-secondary mb-3" data-i18n="m2.steps.s2.desc">Todas las apps reguladas te pedirán documentos. Prepáralos antes para evitar demoras.</p>
+                <div class="vstack gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m2.steps.s2.p1">DNI o pasaporte válido</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m2.steps.s2.p2">Selfie con documento</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m2.steps.s2.p3">Comprobante de domicilio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="180">
+            <div class="card card-neo h-100 module-card">
+              <div class="card-body">
+                <div class="step-number">3</div>
+                <h3 class="h5 mb-2" data-i18n="m2.steps.s3.title">Conecta tu método de pago</h3>
+                <p class="text-body-secondary mb-3" data-i18n="m2.steps.s3.desc">Transferencia bancaria suele ser más barata que tarjeta. Revisa tiempos y comisiones.</p>
+                <div class="vstack gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m2.steps.s3.p1">Cuenta bancaria USA</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m2.steps.s3.p2">Tarjeta (más rápida, más cara)</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m2.steps.s3.p3">Verifica límites</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="240">
+            <div class="card card-neo h-100 module-card">
+              <div class="card-body">
+                <div class="step-number">4</div>
+                <h3 class="h5 mb-2" data-i18n="m2.steps.s4.title">Primera compra pequeña</h3>
+                <p class="text-body-secondary mb-3" data-i18n="m2.steps.s4.desc">Empieza con $20-$50 para aprender el proceso. Luego aumenta con calma.</p>
+                <div class="vstack gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m2.steps.s4.p1">Compra mínima permitida</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m2.steps.s4.p2">Confirma la transacción</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span class="small" data-i18n="m2.steps.s4.p3">Revisa saldo y comisión</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="errores" class="section section-alt">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h2 class="section-title" data-i18n="m2.errors.title">Errores comunes a evitar</h2>
+            <p class="section-subtitle" data-i18n="m2.errors.subtitle">
+              La mayoría de los problemas ocurren por apuro o no leer bien. Revisa estos puntos antes de comprar.
+            </p>
+            <div class="vstack gap-3">
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-exclamation-triangle"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m2.errors.e1.title">No revisar comisiones</div>
+                  <div class="text-body-secondary" data-i18n="m2.errors.e1.desc">Pueden variar mucho entre método de pago y exchange.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-exclamation-triangle"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m2.errors.e2.title">Comprar con tarjeta sin verificar límites</div>
+                  <div class="text-body-secondary" data-i18n="m2.errors.e2.desc">Algunos bancos bloquean transacciones crypto.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-exclamation-triangle"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m2.errors.e3.title">No guardar recibos</div>
+                  <div class="text-body-secondary" data-i18n="m2.errors.e3.desc">Guarda confirmaciones y datos de la transacción.</div>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="icon-circle"><i class="bi bi-exclamation-triangle"></i></div>
+                <div>
+                  <div class="fw-semibold" data-i18n="m2.errors.e4.title">Comprar por presión</div>
+                  <div class="text-body-secondary" data-i18n="m2.errors.e4.desc">Si te dicen que "es ahora", desconfía.</div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <a class="btn btn-primary" href="modulo-3.html"><span data-i18n="m2.errors.cta">Siguiente módulo: Plan y Estrategia</span></a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80">
+            <div class="card card-neo">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="h5 mb-3" data-i18n="m2.checklist.title">Checklist antes de comprar</h3>
+                <div class="vstack gap-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check1">
+                    <label class="form-check-label" for="check1" data-i18n="m2.checklist.c1">Elegí una app regulada</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check2">
+                    <label class="form-check-label" for="check2" data-i18n="m2.checklist.c2">Completé KYC correctamente</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check3">
+                    <label class="form-check-label" for="check3" data-i18n="m2.checklist.c3">Conecté mi método de pago</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check4">
+                    <label class="form-check-label" for="check4" data-i18n="m2.checklist.c4">Revisé comisiones y tiempos</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check5">
+                    <label class="form-check-label" for="check5" data-i18n="m2.checklist.c5">Sé mi monto mínimo</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check6">
+                    <label class="form-check-label" for="check6" data-i18n="m2.checklist.c6">Tengo 2FA activado</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center gap-2">
+            <span class="brand-logo-wrap" aria-hidden="true">
+              <img class="brand-logo" src="img/logo.png" alt="NexoAcademy" onerror="this.style.display='none'; this.closest('.brand-logo-wrap').style.display='none'; this.closest('.d-flex').querySelector('.brand-mark').style.display='inline-block';" />
+            </span>
+            <span class="brand-mark" aria-hidden="true" style="display:none"></span>
+            <div>
+              <div class="fw-semibold">NexoAcademy</div>
+              <div class="small text-body-secondary">Educación crypto | Gestión de riesgo | Mentorías</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a class="footer-link" href="index.html" data-i18n="footer.home">Inicio</a>
+          <a class="footer-link" href="modulo-1.html" data-i18n="footer.module1">Seguridad</a>
+          <a class="footer-link" href="modulo-2.html" data-i18n="footer.module2">Compra</a>
+          <a class="footer-link" href="modulo-3.html" data-i18n="footer.module3">Plan</a>
+          <a class="footer-link" href="modulo-4.html" data-i18n="footer.module4">Herramientas</a>
+          <a class="footer-link" href="sms:+19045376790" data-i18n="footer.contact">SMS</a>
+        </div>
+      </div>
+
+      <hr class="my-4" />
+
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
+        <div class="small text-body-secondary">© <span id="year"></span> <span data-i18n="footer.rights">NexoAcademy. Todos los derechos reservados.</span></div>
+        <div class="small text-body-secondary" data-i18n="footer.notice">Aviso: contenido educativo. No es asesoría financiera.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

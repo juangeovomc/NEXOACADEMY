@@ -16,7 +16,7 @@
 
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
+<body>  
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top" aria-label="Navegación principal">
@@ -40,6 +40,7 @@
           <li class="nav-item"><a class="nav-link" href="modulo-3.html" data-i18n="nav.module3">Módulo 3</a></li>
           <li class="nav-item"><a class="nav-link" href="modulo-4.html" data-i18n="nav.module4">Módulo 4</a></li>
           <li class="nav-item"><a class="nav-link" href="sobre.html" data-i18n="nav.about">Sobre NexoAcademy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#registro">Registro</a></li>
 
           <li class="nav-item ms-lg-2">
             <div class="btn-group lang-toggle" role="group" aria-label="Idioma">
@@ -337,39 +338,448 @@
                 <form class="needs-validation" novalidate>
                   <div class="row g-3">
                     <div class="col-md-6">
-                      <label class="form-label" for="nombre" data-i18n="form.name.label">Nombre</label>
-                      <input class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" data-i18n-placeholder="form.name.placeholder" required />
-                      <div class="invalid-feedback" data-i18n="form.name.error">Ingresa tu nombre.</div>
+                      <label class="form-label" for="nombre">Nombre</label>
+                      <input class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required />
+                      <div class="invalid-feedback">Ingresa tu nombre.</div>
                     </div>
                     <div class="col-md-6">
-                      <label class="form-label" for="email" data-i18n="form.email.label">Email</label>
-                      <input class="form-control" id="email" name="email" type="email" placeholder="tu@email.com" data-i18n-placeholder="form.email.placeholder" required />
-                      <div class="invalid-feedback" data-i18n="form.email.error">Ingresa un email válido.</div>
+                      <label class="form-label" for="email">Email</label>
+                      <input class="form-control" id="email" name="email" type="email" placeholder="tu@email.com" required />
+                      <div class="invalid-feedback">Ingresa un email válido.</div>
                     </div>
-                    <div class="col-12">
-                      <label class="form-label" for="nivel" data-i18n="form.level.label">Nivel</label>
-                      <select class="form-select" id="nivel" name="nivel" required>
-                        <option value="" selected disabled data-i18n="form.level.placeholder">Selecciona una opción</option>
-                        <option data-i18n="form.level.o1">Nuevo / Básico</option>
-                        <option data-i18n="form.level.o2">Intermedio</option>
-                        <option data-i18n="form.level.o3">Ya opero (quiero sistema)</option>
-                      </select>
-                      <div class="invalid-feedback" data-i18n="form.level.error">Selecciona tu nivel.</div>
-                    </div>
-                    <div class="col-12">
-                      <label class="form-label" for="mensaje" data-i18n="form.goal.label">Objetivo</label>
-                      <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Ej: aprender a gestionar riesgo, crear plan, revisar estrategia..." data-i18n-placeholder="form.goal.placeholder" required></textarea>
-                      <div class="invalid-feedback" data-i18n="form.goal.error">Cuéntame tu objetivo.</div>
+                                        <div class="col-12">
+                      <label class="form-label" for="mensaje">Objetivo</label>
+                      <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Ej: aprender a gestionar riesgo, crear plan, revisar estrategia..." required></textarea>
+                      <div class="invalid-feedback">Cuéntame tu objetivo.</div>
                     </div>
                     <div class="col-12 d-grid">
                       <button class="btn btn-primary btn-lg" type="submit">
-                        <span data-i18n="form.submit">Enviar</span>
+                        <span>Enviar</span>
                         <i class="bi bi-send ms-2"></i>
                       </button>
                     </div>
                     <div class="col-12">
                       <div class="small text-body-secondary" data-i18n="form.disclaimer">
                         Al enviar aceptas ser contactado para coordinar la llamada. Puedes reemplazar este formulario por un plugin en WordPress.
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="registro" class="section section-alt">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up">
+            <div class="text-center mb-5">
+              <div class="badge bg-primary mb-3 px-3 py-2">
+                <i class="bi bi-star-fill me-2"></i>Registro Premium
+              </div>
+              <h2 class="section-title">Comienza tu viaje en Bitcoin</h2>
+              <p class="section-subtitle">Únete a la comunidad de latinos que están aprendiendo a invertir de forma segura y estratégica.</p>
+              
+              <!-- Progress Steps -->
+              <div class="progress-steps d-flex justify-content-center align-items-center mt-4">
+                <div class="step completed" data-step="1">
+                  <div class="step-circle">
+                    <i class="bi bi-person"></i>
+                  </div>
+                  <span class="step-label">Datos</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step" data-step="2">
+                  <div class="step-circle">
+                    <i class="bi bi-currency-bitcoin"></i>
+                  </div>
+                  <span class="step-label">Inversión</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step" data-step="3">
+                  <div class="step-circle">
+                    <i class="bi bi-graph-up"></i>
+                  </div>
+                  <span class="step-label">Experiencia</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step" data-step="4">
+                  <div class="step-circle">
+                    <i class="bi bi-check-circle"></i>
+                  </div>
+                  <span class="step-label">Finalizar</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card card-neo card-premium">
+              <div class="card-header-gradient">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <h4 class="mb-1"><i class="bi bi-shield-check me-2"></i>Formulario Seguro</h4>
+                    <p class="text-white-50 mb-0 small">Tus datos están protegidos con encriptación SSL</p>
+                  </div>
+                  <div class="security-badges">
+                    <span class="badge bg-success me-1">
+                      <i class="bi bi-lock-fill"></i> SSL
+                    </span>
+                    <span class="badge bg-info">
+                      <i class="bi bi-shield-fill"></i> Seguro
+                    </span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-body p-4 p-md-5">
+                <form id="registroForm" class="needs-validation" novalidate method="POST">
+                  <div class="row g-4">
+                    
+                    <!-- Sección 1: Información Personal -->
+                    <div class="col-12">
+                      <div class="section-header">
+                        <div class="section-icon">
+                          <i class="bi bi-person-circle"></i>
+                        </div>
+                        <div>
+                          <h5 class="mb-1">Información Personal</h5>
+                          <p class="text-muted small mb-0">Datos básicos para personalizar tu experiencia</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="regNombre" class="form-label">
+                          <i class="bi bi-person me-2"></i>Nombre completo *
+                        </label>
+                        <input class="form-control form-control-lg" id="regNombre" name="regNombre" placeholder="Tu nombre completo" required />
+                        <div class="invalid-feedback">
+                          <i class="bi bi-exclamation-circle me-1"></i>Ingresa tu nombre completo.
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="regEmail" class="form-label">
+                          <i class="bi bi-envelope me-2"></i>Email *
+                        </label>
+                        <input class="form-control form-control-lg" id="regEmail" name="regEmail" type="email" placeholder="tu@email.com" required />
+                        <div class="invalid-feedback">
+                          <i class="bi bi-exclamation-circle me-1"></i>Ingresa un email válido.
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="regTelefono" class="form-label">
+                          <i class="bi bi-telephone me-2"></i>Teléfono *
+                        </label>
+                        <input class="form-control form-control-lg" id="regTelefono" name="regTelefono" type="tel" placeholder="+1 (555) 123-4567" required />
+                        <div class="invalid-feedback">
+                          <i class="bi bi-exclamation-circle me-1"></i>Ingresa tu número de teléfono.
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="regEdad" class="form-label">
+                          <i class="bi bi-calendar-date me-2"></i>Edad *
+                        </label>
+                        <input class="form-control form-control-lg" id="regEdad" name="regEdad" type="number" min="18" max="100" placeholder="35" required />
+                        <div class="invalid-feedback">
+                          <i class="bi bi-exclamation-circle me-1"></i>Ingresa tu edad (18+ años).
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Sección 2: Información de Inversión -->
+                    <div class="col-12 mt-4">
+                      <div class="section-header">
+                        <div class="section-icon bg-warning">
+                          <i class="bi bi-currency-bitcoin"></i>
+                        </div>
+                        <div>
+                          <h5 class="mb-1">Información de Inversión</h5>
+                          <p class="text-muted small mb-0">Para personalizar tu estrategia</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="regInversion" class="form-label">
+                          <i class="bi bi-cash-stack me-2"></i>Valor de inversión *
+                        </label>
+                        <input type="text" class="form-control form-control-lg" id="regInversion" name="regInversion" placeholder="Ej: $5,000 - $10,000" required>
+                        <div class="form-text text-muted small">
+                          Ejemplos: Menos de $1,000, $1,000 - $5,000, $5,000 - $10,000, Más de $10,000
+                        </div>
+                        <div class="invalid-feedback">
+                          <i class="bi bi-exclamation-circle me-1"></i>Ingresa tu rango de inversión.
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="regProcedencia" class="form-label">
+                          <i class="bi bi-bank me-2"></i>Procedencia de fondos *
+                        </label>
+                        <input type="text" class="form-control form-control-lg" id="regProcedencia" name="regProcedencia" placeholder="Ej: Ahorros personales" required>
+                        <div class="form-text text-muted small">
+                          Ejemplos: Ahorros personales, Salario, Negocio, Inversiones, Herencia
+                        </div>
+                        <div class="invalid-feedback">
+                          <i class="bi bi-exclamation-circle me-1"></i>Ingresa la procedencia de tus fondos.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Sección 3: Experiencia y Disponibilidad -->
+                    <div class="col-12 mt-4">
+                      <div class="section-header">
+                        <div class="section-icon bg-success">
+                          <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <div>
+                          <h5 class="mb-1">Experiencia y Disponibilidad</h5>
+                          <p class="text-muted small mb-0">Para adaptar el contenido a tu nivel</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="regExperiencia" class="form-label">
+                          <i class="bi bi-mortarboard me-2"></i>Experiencia con Bitcoin/cripto *
+                        </label>
+                        <input type="text" class="form-control form-control-lg" id="regExperiencia" name="regExperiencia" placeholder="Ej: Principiante" required>
+                        <div class="form-text text-muted small">
+                          Ejemplos: Sin experiencia, Principiante, Intermedio, Avanzado
+                        </div>
+                        <div class="invalid-feedback">
+                          <i class="bi bi-exclamation-circle me-1"></i>Ingresa tu nivel de experiencia.
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="regDisponibilidad" class="form-label">
+                          <i class="bi bi-clock me-2"></i>Disponibilidad para mentoría *
+                        </label>
+                        <input type="text" class="form-control form-control-lg" id="regDisponibilidad" name="regDisponibilidad" placeholder="Ej: Mañana 9:00-12:00" required>
+                        <div class="form-text text-muted small">
+                          Ejemplos: Mañana (9:00-12:00), Tarde (12:00-18:00), Noche (18:00-21:00), Fines de semana, Horario flexible
+                        </div>
+                        <div class="invalid-feedback">
+                          <i class="bi bi-exclamation-circle me-1"></i>Ingresa tu disponibilidad.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Sección 4: Objetivos -->
+                    <div class="col-12 mt-4">
+                      <div class="section-header">
+                        <div class="section-icon bg-info">
+                          <i class="bi bi-bullseye"></i>
+                        </div>
+                        <div>
+                          <h5 class="mb-1">Tus Objetivos</h5>
+                          <p class="text-muted small mb-0">¿Qué quieres lograr? (Selecciona al menos uno)</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <div class="objectives-grid">
+                        <div class="objective-card">
+                          <input class="form-check-input" type="checkbox" value="aprender" id="obj1" name="regObjetivos">
+                          <label class="form-check-label" for="obj1">
+                            <div class="objective-icon">
+                              <i class="bi bi-book"></i>
+                            </div>
+                            <div class="objective-content">
+                              <div class="objective-title">Aprender a invertir seguro</div>
+                              <div class="objective-desc">Fundamentos y buenas prácticas</div>
+                            </div>
+                          </label>
+                        </div>
+                        
+                        <div class="objective-card">
+                          <input class="form-check-input" type="checkbox" value="diversificar" id="obj2" name="regObjetivos">
+                          <label class="form-check-label" for="obj2">
+                            <div class="objective-icon">
+                              <i class="bi bi-diagram-3"></i>
+                            </div>
+                            <div class="objective-content">
+                              <div class="objective-title">Diversificar mi portafolio</div>
+                              <div class="objective-desc">Estrategias de diversificación</div>
+                            </div>
+                          </label>
+                        </div>
+                        
+                        <div class="objective-card">
+                          <input class="form-check-input" type="checkbox" value="largo-plazo" id="obj3" name="regObjetivos">
+                          <label class="form-check-label" for="obj3">
+                            <div class="objective-icon">
+                              <i class="bi bi-calendar-check"></i>
+                            </div>
+                            <div class="objective-content">
+                              <div class="objective-title">Inversión a largo plazo</div>
+                              <div class="objective-desc">Planificación estratégica</div>
+                            </div>
+                          </label>
+                        </div>
+                        
+                        <div class="objective-card">
+                          <input class="form-check-input" type="checkbox" value="trading" id="obj4" name="regObjetivos">
+                          <label class="form-check-label" for="obj4">
+                            <div class="objective-icon">
+                              <i class="bi bi-graph-up"></i>
+                            </div>
+                            <div class="objective-content">
+                              <div class="objective-title">Aprender trading</div>
+                              <div class="objective-desc">Análisis y estrategias activas</div>
+                            </div>
+                          </label>
+                        </div>
+                        
+                        <div class="objective-card">
+                          <input class="form-check-input" type="checkbox" value="proteger" id="obj5" name="regObjetivos">
+                          <label class="form-check-label" for="obj5">
+                            <div class="objective-icon">
+                              <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div class="objective-content">
+                              <div class="objective-title">Proteger mi patrimonio</div>
+                              <div class="objective-desc">Seguridad y preservación</div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="invalid-feedback text-center mt-2">
+                        <i class="bi bi-exclamation-circle me-1"></i>Selecciona al menos un objetivo.
+                      </div>
+                    </div>
+
+                    <!-- Sección 5: Módulos de interés -->
+                    <div class="col-12 mt-4">
+                      <div class="section-header">
+                        <div class="section-icon bg-secondary">
+                          <i class="bi bi-journal-bookmark"></i>
+                        </div>
+                        <div>
+                          <h5 class="mb-1">Módulos de Interés</h5>
+                          <p class="text-muted small mb-0">¿Qué áreas te interesan más?</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <div class="modules-grid">
+                        <div class="module-card">
+                          <input class="form-check-input" type="checkbox" value="modulo1" id="mod1" name="regModulos">
+                          <label class="form-check-label" for="mod1">
+                            <div class="module-number">1</div>
+                            <div class="module-content">
+                              <div class="module-title">Protección y Seguridad</div>
+                              <div class="module-desc">Evita estafas y protege tus activos</div>
+                            </div>
+                          </label>
+                        </div>
+                        
+                        <div class="module-card">
+                          <input class="form-check-input" type="checkbox" value="modulo2" id="mod2" name="regModulos">
+                          <label class="form-check-label" for="mod2">
+                            <div class="module-number">2</div>
+                            <div class="module-content">
+                              <div class="module-title">Primera Compra Segura</div>
+                              <div class="module-desc">Apps, pasos y buenas prácticas</div>
+                            </div>
+                          </label>
+                        </div>
+                        
+                        <div class="module-card">
+                          <input class="form-check-input" type="checkbox" value="modulo3" id="mod3" name="regModulos">
+                          <label class="form-check-label" for="mod3">
+                            <div class="module-number">3</div>
+                            <div class="module-content">
+                              <div class="module-title">Plan y Estrategia</div>
+                              <div class="module-desc">Gestión de riesgo y decisiones</div>
+                            </div>
+                          </label>
+                        </div>
+                        
+                        <div class="module-card">
+                          <input class="form-check-input" type="checkbox" value="modulo4" id="mod4" name="regModulos">
+                          <label class="form-check-label" for="mod4">
+                            <div class="module-number">4</div>
+                            <div class="module-content">
+                              <div class="module-title">Herramientas Prácticas</div>
+                              <div class="module-desc">Wallets, exchanges y apps</div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Comentarios adicionales -->
+                    <div class="col-12 mt-4">
+                      <div class="mb-3">
+                        <label for="regComentarios" class="form-label">
+                          <i class="bi bi-chat-text me-2"></i>Comentarios adicionales
+                        </label>
+                        <textarea class="form-control form-control-lg" id="regComentarios" name="regComentarios" rows="3" placeholder="Cuéntame cualquier otra información relevante..."></textarea>
+                      </div>
+                    </div>
+
+                    <!-- Términos y condiciones -->
+                    <div class="col-12 mt-4">
+                      <div class="terms-card">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="acepto" id="terminos" name="terminos" required>
+                          <label class="form-check-label d-flex align-items-start" for="terminos">
+                            <span class="me-2">Acepto los <a href="terminos.html" class="text-primary text-decoration-underline" target="_blank">términos y condiciones</a> y la <a href="politica-privacidad.html" class="text-primary text-decoration-underline" target="_blank">política de privacidad</a> *</span>
+                          </label>
+                          <div class="invalid-feedback">
+                            <i class="bi bi-exclamation-circle me-1"></i>Debes aceptar los términos y condiciones.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="col-12 d-grid gap-3 d-md-flex justify-content-md-center mt-5">
+                      <button class="btn btn-primary btn-lg px-5 py-3 submit-btn" type="submit">
+                        <i class="bi bi-rocket-takeoff me-2"></i>
+                        <span>Completar Registro</span>
+                        <span class="btn-shine"></span>
+                      </button>
+                      <button class="btn btn-outline-secondary btn-lg px-5 py-3" type="reset">
+                        <i class="bi bi-arrow-clockwise me-2"></i>
+                        <span>Limpiar Formulario</span>
+                      </button>
+                    </div>
+
+                    <!-- Mensaje de confirmación -->
+                    <div class="col-12">
+                      <div class="alert alert-success alert-custom mt-4 d-none" id="registroExito">
+                        <div class="d-flex align-items-center">
+                          <div class="alert-icon">
+                            <i class="bi bi-check-circle-fill"></i>
+                          </div>
+                          <div>
+                            <strong>¡Registro completado con éxito!</strong><br>
+                            <small class="text-white-50">Te contactaremos pronto para coordinar los siguientes pasos.</small>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -404,6 +814,7 @@
           <a class="footer-link" href="modulo-4.html" data-i18n="footer.module4">Herramientas</a>
           <a class="footer-link" href="#sobre" data-i18n="footer.about">Sobre mí</a>
           <a class="footer-link" href="#contacto" data-i18n="footer.contact">Contacto</a>
+          <a class="footer-link" href="#registro">Registro</a>
         </div>
       </div>
 
